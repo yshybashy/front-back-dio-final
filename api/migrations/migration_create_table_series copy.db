@@ -1,0 +1,6 @@
+CREATE TABLE `netflix`.`series` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NULL,
+  `description` VARCHAR(3000) NULL,
+  `image` VARCHAR(3000) NULL,
+  PRIMARY KEY (`id`));
