@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #111;
+    color: #FFF;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.listas {
+    margin-top: -105px;
+}
+footer {
+    margin: 50px 0px;
+    text-align: center;
+}
+.carregamento {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 99;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.telaLogin--backgroundImage{
+    background-image: url('https://miro.medium.com/max/1400/1*5lyavS59mazOFnb55Z6znQ.png');
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center, center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

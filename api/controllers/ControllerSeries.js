@@ -9,7 +9,7 @@ module.exports = {
         }
 
         try {
-            let response = await db.query('INSERT INTO films SET ?', [datas]);
+            let response = await db.query('INSERT INTO series SET ?', [datas]);
             res.json(response);
         } catch (error) {
             console.log(error);
@@ -25,7 +25,7 @@ module.exports = {
         }
 
         try {
-            let response = await db.query('UPDATE films SET ? WHERE id = ?', [datas, id]);
+            let response = await db.query('UPDATE series SET ? WHERE id = ?', [datas, id]);
             res.json(response);
         } catch (error) {
             console.log(error);
@@ -33,7 +33,7 @@ module.exports = {
     },
     async findAll(req, res){
         try {
-            let response = await db.query('SELECT * FROM films');
+            let response = await db.query('SELECT * FROM series');
             res.json(response[0]);
         } catch (error) {
             console.log(error);
@@ -42,7 +42,7 @@ module.exports = {
     async findById(req, res){
         let id = req.params.id;
         try {
-            let response = await db.query(`SELECT * FROM films WHERE id = ${id}`);
+            let response = await db.query(`SELECT * FROM series WHERE id = ${id}`);
             res.json(response[0]);
         } catch (error) {
             console.log(error);
@@ -52,7 +52,7 @@ module.exports = {
         let id = req.params.id;
 
         try {
-            let response = await db.query(`DELETE FROM films WHERE id = ${id}`);
+            let response = await db.query(`DELETE FROM series WHERE id = ${id}`);
             res.json(response);
         } catch (error) {
             console.log(error);
