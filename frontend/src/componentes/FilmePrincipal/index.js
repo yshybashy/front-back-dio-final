@@ -3,7 +3,6 @@ import './FilmePrincipal.css';
 import {Context} from '../../context/Context';
 
 export default function FilmePrincipal({filme}) {
-    console.log(filme)
 
     const {videoPrincipal} = useContext(Context);
     let sinopse = filme.description;

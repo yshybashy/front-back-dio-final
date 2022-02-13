@@ -45,7 +45,6 @@ function contChar(name, maxChar, target){
    const nameInput = document.querySelectorAll('input[name="name"]')[0];
    const descriptionInput = document.querySelectorAll('textarea[name="description"]')[0];
    const imgInput = document.querySelectorAll('input[name="img"]')[0];
-    console.log(erroInputName);
    if(nameInput.value && descriptionInput.value && imgInput.value && (erroInputName===false) && (erroInputDescription===false) && (erroInputImage===false)){
      const obj = {
        name : nameInput.value,
@@ -70,7 +69,6 @@ function contChar(name, maxChar, target){
         })
      }else{
       await new SeriesApi().create('/netflix/series/insert', obj).then(res => {
-        console.log('inserido com sucesso');
         setOpen(false);
         setOpenModal(false)
         setAttPage(!attPage);

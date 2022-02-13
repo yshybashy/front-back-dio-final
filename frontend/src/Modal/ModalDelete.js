@@ -10,8 +10,7 @@ export default function ModalDelete({name}) {
   const {infoVideo, setOpenModalDelete, setAttPage, attPage, setVideoPrincipal} = useContext(Context);
   const [open, setOpen] = useState(true);
   const [spinner, setSpinner] = useState(false);
-  console.log(infoVideo);
-
+  
   async function deleteVideo(){
     setSpinner(true);
     if(name == 'Filme'){

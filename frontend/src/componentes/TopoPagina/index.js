@@ -3,7 +3,6 @@ import './TopoPagina.css';
 
 export default function TopoPagina ({topoPreto}) {
     return (
-        // Aqui vai ver se o header.topoPreto no CSS vai ser utilizado ou não
         <header className={topoPreto ? 'topoPreto' : ''}>
             
             <div className={`topoPagina--logo`}>
